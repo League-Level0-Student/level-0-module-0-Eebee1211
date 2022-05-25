@@ -23,7 +23,8 @@ public class RobotSquare {
  
     	// COUNT. Create an int variable that will count how many sides of the square we have drawn.
     	//        The start value will be zero because no sides have yet been drawn. Use this code:
-		      int count = 0;  
+		      int count = 0;
+		      while ( count < 4) {
     	
 
         // DRAW.  Draw a line. Use this command:
@@ -36,7 +37,7 @@ public class RobotSquare {
     	
     	// INCREASE COUNT. Add one to the number of sides that have now been drawn like this:
     		      count += 1;    
-
+		      }
     	
     	// Run the program. Did the Robot draw a line and turn?
     	 

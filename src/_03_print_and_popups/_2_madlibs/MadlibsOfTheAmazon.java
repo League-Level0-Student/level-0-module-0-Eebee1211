@@ -9,9 +9,14 @@ public class MadlibsOfTheAmazon {
 		String prompt =  "If you find yourself having to cross a piranha-infested river, here's how to do it...";
 		
 		// Get the player to enter an adjective
-
+		JOptionPane.showMessageDialog(null, prompt); 
 		// Get the player to enter a type of liquid
-
+		String adjective = JOptionPane.showInputDialog("enter an adjective");
+		String liquid = JOptionPane.showInputDialog("enter a type of liquid");
+		String bodyPart = JOptionPane.showInputDialog("enter a body part");
+		String verb = JOptionPane.showInputDialog("enter a verb");
+		String place = JOptionPane.showInputDialog("enter a place"); 
+		
 		// Get the player to enter a body part
 
 		// Get the player to enter a verb
@@ -24,16 +29,16 @@ public class MadlibsOfTheAmazon {
 		// Hint:  You will need to add more + signs to join the variables to the other parts of the story.
 		
 		String story = 
-		"Piranhas are more [**adjective**] during the day, so cross the river at\n"  +
-		"night. Piranhas are attracted to fresh [**type of liquid**] and will most\n"  +
-		"likely take a bite out of your [**body part**] if you [**verb**]. Whatever\n"  +
+		"Piranhas are more "+adjective+" during the day, so cross the river at\n"  +
+		"night. Piranhas are attracted to fresh "+liquid+" and will most\n"  +
+		"likely take a bite out of your "+bodyPart+" if you "+verb+". Whatever\n"  +
 		"you do, if you have an open wound, try to find another way to get\n"  +
-		"back to the [**place**]. Good luck!";
+		"back to the "+place+". Good luck!";
 		
 		// Make a pop-up that contains the final story. The \n escape characters add line breaks to the story. 
 		// If you need to, move them around to make your story look better in the pop-up
-		
+		JOptionPane.showMessageDialog(null,story); 
 		// If you want to write your own Madlib story, just change the story variable and ask the player different questions.
-
+		
 	}
 }
