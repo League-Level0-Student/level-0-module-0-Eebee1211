@@ -5,9 +5,15 @@ import java.util.Random;
 public class AwesomeOrNot {
 
 	// 1. Make a main method that includes everything below
-
+		public static void main(String[] args) {
+			
+		
 	
-		Random ran = new Random();    //This will be used below to make a random number. 
+		Random ran = new Random();
+		int number = ran.nextInt(4); 
+		System.out.println(number); 
+		
+		//This will b used below to make a random number. 
 		
 		// 2. Make a variable that will hold a random whole number
 	
@@ -33,4 +39,5 @@ public class AwesomeOrNot {
 	
 			// -- invent your own message to give to the user (be nice).
 
+}
 }
